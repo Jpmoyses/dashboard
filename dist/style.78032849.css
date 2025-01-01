@@ -1,0 +1,103 @@
+:root{
+    --bg-color: #881337;
+    --dark-bg-color: #4c0519;
+    --light-bg-color: #88133628;
+    --white-font-color: #fff1f2;
+    --redish-color: #f43f5e;
+
+}
+
+body{
+    height: 100vh;
+    display: grid;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-font-color);
+}
+
+.sidebar p{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    display: grid;
+    grid-template-rows: repeat(12, 65px);
+    align-items: center;
+    grid-column: 1/2;
+    background-color: var(--bg-color);
+    padding-left: 2.2em;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.logo{
+    font-size: 1.6em;
+    margin-top: 2.3rem;
+}
+
+.content{
+    display: grid;
+    grid-column: 2/11;
+}
+
+.topbar{
+    display: grid;
+    grid-template: 1.5fr 2.5fr/ 5fr 3fr;
+    grid-row: 1/2;
+    box-shadow: 0px 2px 5px  rgba(0, 0, 0, 0.164);
+
+    padding: 1rem 3rem 0.5rem 3rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search input{
+    background-color: var(--light-bg-color);
+    border: 0px solid;
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    flex-grow: 1;
+}
+
+.profileTop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+
+.profileTop p{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.pfp{
+    height: 60px;
+    width: auto;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.plate{
+    display: grid;
+    grid-row: 2/15;
+    background-color: var(--light-bg-color);
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */
