@@ -39,11 +39,13 @@ a{
     gap: 25px;
     font-size: 1.2em;
     font-weight: 700;
+    transition-duration: 0.4s;
 }
 
 .logo{
     font-size: 1.6em;
     margin-top: 2.3rem;
+    margin-right: 2rem;
 }
 
 .content{
@@ -71,6 +73,7 @@ a{
     border: 0px solid;
     border-radius: 20px;
     padding: 0.5rem 0.8rem;
+    margin-right: 30px;
     flex-grow: 1;
 }
 
@@ -81,6 +84,23 @@ a{
     gap: 30px;
 }
 
+.profileBottom{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
+}
+
+.name{
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .profileTop p{
     font-size: 1.1em;
@@ -89,9 +109,41 @@ a{
 
 .pfp{
     height: 60px;
-    width: auto;
+    width: 60px;
     border-radius: 40px;
     object-fit: cover;
+}
+
+.big{
+    height: 120px;
+    width: 120px;
+    border-radius: 200px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+button{
+    padding: 0.6rem 1.5rem;
+    background-color: var(--bg-color);
+    color: var(--white-font-color);
+    font-weight: 700;
+    border: 0px solid;
+    border-radius: 24px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover, .options:hover, .bell:hover{
+    transform: scale(1.1);
+}
+
+logo:hover{
+    transform: scale(1.3);
 }
 
 .plate{
