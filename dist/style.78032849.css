@@ -154,7 +154,7 @@ button:hover, .options:hover, .bell:hover{
 
 .projects{
     display: grid;
-    grid-template: 30px repeat(2, 1fr) / repeat(3, minmax(200px, 1fr));
+    grid-template: 30px repeat(2, 1fr) / repeat(3, minmax(300px, 33%));
     gap: 30px;
     padding: 1.5rem;
     grid-column: 1/4;
@@ -167,10 +167,28 @@ button:hover, .options:hover, .bell:hover{
 }
 
 .card{
-    background-color: var(--white-font-color);
+    background-color: white;
     box-shadow: 0px 2px 5px  rgba(0, 0, 0, 0.164);
     border-radius: 12px;
     transition-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template: repeat(3, 1fr) / 1fr;
+    padding: 20px;
+}
+
+.cardContent{
+    padding: 2px;
+    width: 320px;
+    max-width: 320px;
+    overflow-wrap: break-word;
+}
+
+.cardContent h6{
+    font-size: 0.8em;
+    margin: 15px 0px 5px 0px;
 }
 
 .feeds{
@@ -184,6 +202,43 @@ button:hover, .options:hover, .bell:hover{
 .feeds p{
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+.cardContent p{
+    font-size: 0.65em;
+    margin: 3px 0px 15px 0px;
+}
+
+.border{
+    border: 1px solid rgba(0, 0, 0, 0.164);;
+    border-style: none none solid none;
+}
+
+.bg {
+    background: linear-gradient(90deg, var(--bg-color) 3%, white 3%);
+}
+
+.project-text{
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.project-text h6{
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.project-text p{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.project-images{
+    align-self: flex-end;
+    justify-self: flex-end;
+    display: flex;
+    gap: 15px;
 }
 
 /*# sourceMappingURL=/style.78032849.css.map */
